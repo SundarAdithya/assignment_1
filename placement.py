@@ -12,7 +12,7 @@ conn = mysql.connector.connect(
 cursor = conn.cursor()
 
 fake = Faker()
-Faker.seed(0)  # Ensure different names on every run
+Faker.seed(0) 
 fake_unique = fake.unique
 # Step 2: Table Creation
 def create_tables():
@@ -133,7 +133,7 @@ class RelatedData:
 
         conn.commit()
 # Step 4: Streamlit Interface
-import pandas as pd  # add this at the top if not already
+import pandas as pd  
 
 def show_streamlit_app():
     st.title("🎓 Placement Eligibility Checker")
